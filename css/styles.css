@@ -1,0 +1,55 @@
+body {
+  padding-top: 20%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px solid blue; */
+}
+.shapes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5%;
+  /* border: 2px solid red; */
+  width: 25%;
+}
+.triangle-up,
+.square,
+.circle {
+  transition: transform 1s;
+  /* transition: color 1s; */
+}
+.triangle-up:hover{
+    border-bottom: 50px solid rgb(199, 150, 60);
+    transform: translateY(-10px);
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid yellow;
+}
+
+.square:hover{
+    background-color: mediumseagreen;
+    transform: translateY(-10px);
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+.circle:hover{
+    background-color: khaki;
+    transform: translateY(-10px);
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
